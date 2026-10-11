@@ -81,13 +81,13 @@ The included `DIAGNOSIS.md` explains the original script's observed failure and 
 
 ## Build and check the source
 
-Extract `script-finder-source.zip`, open a terminal in the extracted source directory, and run:
+Clone this repository or use GitHub’s **Code → Download ZIP**, open a terminal in the source directory, and run:
 
 ```sh
 python3 build.py
 ```
 
-Building uses Python 3's standard library; Node.js is not needed to generate the userscript and unsigned XPI. The build command reports the generated file locations.
+Building uses Python 3's standard library; Node.js is not needed to generate the userscript and unsigned XPI. The build command reports the generated file locations under `dist/`. Generated XPI/ZIP packages are not checked into this repository. When changing source code, rebuild and copy `dist/script-finder.user.js` to the repository-root `script-finder.user.js` before committing, so the ready-to-install file stays current.
 
 To run the shared core tests, with Node.js installed:
 
