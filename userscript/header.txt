@@ -1,0 +1,27 @@
+// ==UserScript==
+// @name         Script Finder — site userscript discovery
+// @namespace    local.script-finder
+// @version      1.0.0
+// @description  Discover userscripts for the current site from Greasy Fork and Sleazy Fork, plus GitHub repository candidates and more search links.
+// @license      MIT; MPL-2.0 (Public Suffix List data)
+// @match        https://*/*
+// @match        http://*/*
+// @run-at       document-end
+// @noframes
+// @inject-into  content
+// @connect      api.greasyfork.org
+// @connect      api.sleazyfork.org
+// @connect      api.github.com
+// @grant        GM_xmlhttpRequest
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_openInTab
+// @grant        GM_registerMenuCommand
+// @grant        GM_info
+// @grant        GM.xmlHttpRequest
+// @grant        GM.getValue
+// @grant        GM.setValue
+// @grant        GM.openInTab
+// @grant        GM.registerMenuCommand
+// @grant        GM.info
+// ==/UserScript==
